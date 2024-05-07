@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ 
+<style> 
+/* CSS styles */
+
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: verdana;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00005f;
+  text-shadow: 2px 2px 5px purple;
+}
+
+a {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#Services {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+#Services td, #Services th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#Services tr:nth-child(even){background-color: #f2f2f2;}
+
+#Services tr:hover {background-color: #ddd;}
+
+#Services th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+table {
+ width:150%;
+ height:70%; 
+}
+
+/* Style the header */
+.header {
+  background-color: #e0dbf6;
+  padding: 20px;
+  text-align: center;
+}
+
+select {
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Accessories Section */
+.accessories-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.accessories-card {
+  width: 200px;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+
+.accessories-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.accessories-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.accessories-card h2 {
+  color: #333;
+  margin-top: 10px;
+}
+
+.accessories-card p {
+  color: #666;
+}
+
+/* About Section */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-box {
+  width: 70%;
+  max-width: 800px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.about-box h2 {
+  color: #333;
+}
+
+.about-box p {
+  color: #666;
+}
+
+body {
+  background-color:#f5dbf6
+  }
+</style>
+</head>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-purple w3-normal w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>FurFriend Health</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#Services" class="w3-bar-item w3-button">Services</a>
+      <a href="#accessories" class="w3-bar-item w3-button">Accessories</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<h1 id="home" class="header">Care for Animals, Care for the World</h1>
+
+<!-- Home Section -->
+<div class="w3-row w3-padding-64" id="home">
+  <img src="https://t3.ftcdn.net/jpg/04/81/85/46/360_F_481854656_gHGTnBscKXpFEgVTwAT4DL4NXXNhDKU9.jpg" width="100%" height="20%" alt="Img of pets">
+</div>
+
+<!-- Services Section -->
+<div class="w3-row w3-padding-64" id="Services">
+  <div class="w3-col m6 w3-padding-medium w3-hide-small"></div>
+  <table id="Services" style="text-align:center;">
+    <tr>
+      <th>Services</th>
+      <th>Size of Pet</th>
+      <th>Price</th>
+    </tr>
+     <tr>
+    <td>Grooming</td>
+    <td>Small-Sized<br>Medium-Sized <br>Large-Sized
+    </td>
+    <td>₱300 <br>₱450 <br>₱550</td>
+  </tr>
+  <tr>
+    <td>Sick Visits/Check up</td>
+    <td>Small-Sized<br>Medium-Sized <br>Large-Sized</td>
+    <td>₱600<br> ₱700<br>₱800</td>
+  </tr>
+  <tr>
+    <td>Diagnostic Test</td>
+    <td>Small-Sized<br>Medium-Sized <br>Large-Sized</td>
+    <td>₱700<br> ₱900<br>₱1,200</td>
+  </tr>
+  <tr>
+    <td>Behavior Consultations</td>
+    <td>Small-Sized<br>Medium-Sized <br>Large-Sized</td>
+    <td>₱350<br> ₱400<br>₱500</td>
+  </tr>
+  <tr>
+    <td>Emergency Treatment</td>
+    <td>Small-Sized<br>Medium-Sized <br>Large-Sized</td>
+    <td>₱600<br> ₱700<br>₱800</td>
+  </tr>
+  <tr>
+    <td>Dental Care</td>
+    <td>Small-Sized<br>Medium-Sized <br>Large-Sized</td>
+    <td>₱500<br> ₱650<br>₱700</td>
+  </tr>
+  <tr>
+    <td>Pet Daycare</td>
+    <td>Small-Sized<br>Medium-Sized <br>Large-Sized</td>
+    <td>₱1,100<br> ₱1,200<br>₱1,500</td>
+  </tr>
+  <tr>
+    <td>Pain Management</td>
+    <td>Small-Sized<br>Medium-Sized <br>Large-Sized</td>
+    <td>₱750<br> ₱950<br>₱1,000</td>
+  </tr>
+
+  </table>
+</div>
+
+<!-- Accessories Section -->
+<div class="w3-row w3-padding-64" id="accessories">
+  <h2 class="w3-center">Accessories</h2>
+  <div class="accessories-container">
+    <div class="accessories-card">
+      <img src="https://i.pinimg.com/564x/41/0c/4d/410c4d202ee461a7409eff34c44c1ad2.jpg" alt="Cage">
+      <h2>Cage</h2>
+      <p>Various sizes of cages for different pets.</p>
+    </div>
+   
+    <div class="accessories-card">
+      <img src="https://i.pinimg.com/564x/07/82/a3/0782a390e84505656a76198718ff5578.jpg" alt="Food">
+      <h2 style="font-size:25px;">Dry & Wet Food and Treats</h2>
+      <p>High-quality food and treats for your pets.</p>
+    </div>
+  
+   <div class="accessories-card">
+      <img src="https://i.pinimg.com/564x/11/f5/8c/11f58cc98a98b87d01bc75d80cf8f655.jpg" alt="Collars">
+      <h2>Collars</h2>
+      <p>We have Collars which can be customized this is for different pets.</p>
+    </div>
+    
+    <div class="accessories-card">
+      <img src="https://i.pinimg.com/236x/b1/b1/a5/b1b1a5aebfd959bc78be609977c83db5.jpg" alt="Clothes">
+      <h2>Clothes</h2>
+      <p>Various designs of clothes for different pets.</p>
+    </div>
+    
+    <div class="accessories-card">
+      <img src="https://i.pinimg.com/564x/07/a2/b1/07a2b151c5039275d1f9cba14f4f5a7a.jpg" alt="Towels">
+      <h2>Towels</h2>
+      <p>Various designs of clothes for different pets.</p>
+    </div>
+    
+    <div class="accessories-card">
+      <img src="https://i.pinimg.com/564x/c4/0d/dc/c40ddcc69d52c9ac2ba29c0f51cfe347.jpg" alt="Perfume">
+      <h2>Perfume</h2>
+      <p>Various designs of clothes for different pets.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+  <h2 class="w3-wide w3-center" style="font-family:Verdana;">CONTACT</h2>
+  <p class="w3-opacity w3-center"><i>Schedule an Appointment</i></p>
+  <div class="w3-row w3-padding-32">
+    <div class="w3-col m6 w3-large w3-margin-bottom">
+      <i class="fa fa-map-marker" style="width:30px"></i> Batanes, Philippines<br>
+      <i class="fa fa-phone" style="width:30px"></i> Phone: 09565629764<br>
+      <i class="fa fa-envelope" style="width:30px"> </i> Email: FurFriend123@gmail.com<br>
+    </div>
+    <div class="w3-col m6">
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>    
+        <select id="Type_of_Service" name="Type_of_Service">
+          <option value="gutenberg">Type of Service</option>
+          <option value="Grooming">Grooming</option>
+          <option value="Sick Visits/Check Up">Sick Visits/Check Up</option>
+          <option value="Diagnostic Test">Diagnostic Test</option>
+          <option value="Behavior Consultations">Behavior Consultations</option>
+          <option value="Emergency Treatment">Emergency Treatment</option>
+          <option value="Dental Care">Dental Care</option>
+          <option value="Pet Daycare">Pet Daycare</option>
+          <option value="Pain Management">Pain Management</option>
+        </select>
+        <br>
+        <br>
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="When" required name="When">
+          </div>
+          <br>
+          <button class="w3-button w3-purple w3-section w3-right" type="submit">SEND</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- About Section -->
+<div class="w3-row w3-padding-64" id="about">
+  <div class="about-container">
+    <div class="about-box">
+      <h2>OPENING HOURS</h2>
+    <br>
+    <h4> Weekends </h4>
+    <h5 class="w3-text-grey">8AM - 10PM</h5>
+    <h4> Weekdays </h4>
+    <h5 class="w3-text-grey">6AM - 11PM</h5>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row w3-padding-64" id="about">
+  <div class="about-container">
+    <div class="about-box">
+      <h2>ABOUT</h2>
+      <p>This Webpage is for helping the stray animals who are experiencing sickness, other health concerns, and who are lost. Where compassion meets commitment: Our business is dedicated to providing shelter and care to animals in need, giving them a safe place to live and a chance for a better tomorrow. Join us in our endeavor to provide love, care, and shelter to all furry friends who are looking for a permanent home. We are making tails wag and hearts smile together.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
